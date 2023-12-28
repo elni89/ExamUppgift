@@ -103,11 +103,35 @@ namespace ExaminerandeUppgift
                         break;
                 }
 
-                // Visa resultat
-                // Fråga användaren om den vill visa tidigare resultat.
-                // Visa tidigare resultat
-                // Fråga användaren om den vill avsluta eller fortsätta.
+               // Visa resultat
+                Console.WriteLine($"Resultat blev: {tal1} {tecken} {tal2} = {resultat}");
 
-            }
+                // Fråga användaren om den vill visa tidigare resultat.
+                Console.WriteLine("Vill du visa tidigare resultat? (ja/nej)");
+                string visaResultat = Console.ReadLine();
+
+                // Visa tidigare resultat
+                if (visaResultat.ToLower() == "ja")
+                {
+                    Console.WriteLine("Tidigare resultat:");
+                    foreach (string tidigareResultat in historik)
+                    {
+                        Console.WriteLine(tidigareResultat);
+                    }
+                }
+
+                // Fråga användaren om den vill avsluta eller fortsätta.
+                Console.WriteLine("Vill du avsluta? (ja/nej)");
+                string avsluta = Console.ReadLine();
+
+                if (avsluta.ToLower() == "ja")
+                {
+                    break;
+                }
+
+                Console.Clear();
+            
+
+           }
         }
 }
