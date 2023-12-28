@@ -67,7 +67,16 @@ namespace ExaminerandeUppgift
                     Console.Clear();
                     goto felaktigt;
                 }
-                // Ifall användaren skulle dela med 0 visa Ogiltig inmatning!
+
+                // Ifall användaren skulle dela med 0, visa Ogiltig inmatning!
+                if (tecken == "/" && tal2 == 0 || tal1 == 0)
+                {
+                    Console.WriteLine("Du kan inte dela med 0. Försök igen.");
+                    Console.WriteLine("Tryck för att börja om");
+                    Console.ReadKey();
+                    Console.Clear();
+                    goto felaktigt;
+                }
                 // Lägga resultat till listan
                 // Visa resultat
                 // Fråga användaren om den vill visa tidigare resultat.
