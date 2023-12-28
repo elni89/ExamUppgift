@@ -19,8 +19,9 @@ namespace ExaminerandeUppgift
             }
             Console.WriteLine();
 
-
             // En lista för att spara historik för räkningar
+            List<string> historik = new List<string>();
+
             // Användaren matar in tal och matematiska operation
             // OBS! Användaren måsta mata in ett tal för att kunna ta sig vidare i programmet!
             // Ifall användaren skulle dela med 0 visa Ogiltig inmatning!
