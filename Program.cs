@@ -22,15 +22,58 @@ namespace ExaminerandeUppgift
             // En lista för att spara historik för räkningar
             List<string> historik = new List<string>();
 
-            // Användaren matar in tal och matematiska operation
-            // OBS! Användaren måsta mata in ett tal för att kunna ta sig vidare i programmet!
-            // Ifall användaren skulle dela med 0 visa Ogiltig inmatning!
-            // Lägga resultat till listan
-            // Visa resultat
-            // Fråga användaren om den vill visa tidigare resultat.
-            // Visa tidigare resultat
-            // Fråga användaren om den vill avsluta eller fortsätta.
+            while (true)
+            {
+            felaktigt:
+                // Användaren matar in tal och matematisk operation
+                // OBS! Användaren måste mata in ett tal för att kunna ta sig vidare i programmet!
+                double tal1 = 0;
+                double tal2 = 0;
+                double resultat = 0;
+                string tecken = "";
 
-        }
+                Console.WriteLine("Skriv in tal 1: ");
+                string input1 = Console.ReadLine();
+
+                if (!double.TryParse(input1, out tal1))
+                {
+                    Console.WriteLine("Felaktigt format för tal 1. Försök igen.");
+                    Console.WriteLine("Tryck för att börja om");
+                    Console.ReadKey();
+                    Console.Clear();
+                    goto felaktigt;
+                }
+
+                Console.WriteLine("Skriv in en matematisk operation (+, -, /, *): ");
+                tecken = Console.ReadLine();
+
+                if (tecken != "+" && tecken != "-" && tecken != "/" && tecken != "*")
+                {
+                    Console.WriteLine("Felaktigt format för operation. Försök igen.");
+                    Console.WriteLine("Tryck för att börja om");
+                    Console.ReadKey();
+                    Console.Clear();
+                    goto felaktigt;
+                }
+
+                Console.WriteLine("Skriv in tal 2: ");
+                string input2 = Console.ReadLine();
+
+                if (!double.TryParse(input2, out tal2))
+                {
+                    Console.WriteLine("Felaktigt format för tal 2. Försök igen.");
+                    Console.WriteLine("Tryck för att börja om");
+                    Console.ReadKey();
+                    Console.Clear();
+                    goto felaktigt;
+                }
+                // Ifall användaren skulle dela med 0 visa Ogiltig inmatning!
+                // Lägga resultat till listan
+                // Visa resultat
+                // Fråga användaren om den vill visa tidigare resultat.
+                // Visa tidigare resultat
+                // Fråga användaren om den vill avsluta eller fortsätta.
+
+            }
     }
 }
