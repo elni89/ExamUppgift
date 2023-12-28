@@ -77,12 +77,37 @@ namespace ExaminerandeUppgift
                     Console.Clear();
                     goto felaktigt;
                 }
+
+                //beräkna och skriv ut resultat, samt spara resultat i listan
                 // Lägga resultat till listan
+                switch (tecken)
+                {
+                    case "+":
+                        resultat = tal1 + tal2;
+                        historik.Add($"{tal1} {tecken} {tal2} = {resultat}");
+                        break;
+
+                    case "-":
+                        resultat = tal1 - tal2;
+                        historik.Add($"{tal1} {tecken} {tal2} = {resultat}");
+                        break;
+
+                    case "*":
+                        resultat = tal1 * tal2;
+                        historik.Add($"{tal1} {tecken} {tal2} = {resultat}");
+                        break;
+
+                    case "/":
+                        resultat = tal1 / tal2;
+                        historik.Add($"{tal1} {tecken} {tal2} = {resultat}");
+                        break;
+                }
+
                 // Visa resultat
                 // Fråga användaren om den vill visa tidigare resultat.
                 // Visa tidigare resultat
                 // Fråga användaren om den vill avsluta eller fortsätta.
 
             }
-    }
+        }
 }
