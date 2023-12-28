@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikla\\OneDrive\\Skrivbord\\c#\\ConsoleApp13\\ConsoleApp13.csproj": {}
+    "C:\\Users\\nikla\\Source\\Repos\\ExamUppgift\\ConsoleApp13.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikla\\OneDrive\\Skrivbord\\c#\\ConsoleApp13\\ConsoleApp13.csproj": {
+    "C:\\Users\\nikla\\Source\\Repos\\ExamUppgift\\ConsoleApp13.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikla\\OneDrive\\Skrivbord\\c#\\ConsoleApp13\\ConsoleApp13.csproj",
+        "projectUniqueName": "C:\\Users\\nikla\\Source\\Repos\\ExamUppgift\\ConsoleApp13.csproj",
         "projectName": "ConsoleApp13",
-        "projectPath": "C:\\Users\\nikla\\OneDrive\\Skrivbord\\c#\\ConsoleApp13\\ConsoleApp13.csproj",
+        "projectPath": "C:\\Users\\nikla\\Source\\Repos\\ExamUppgift\\ConsoleApp13.csproj",
         "packagesPath": "C:\\Users\\nikla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikla\\OneDrive\\Skrivbord\\c#\\ConsoleApp13\\obj\\",
+        "outputPath": "C:\\Users\\nikla\\Source\\Repos\\ExamUppgift\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nikla\\AppData\\Roaming\\NuGet\\NuGet.Config",
