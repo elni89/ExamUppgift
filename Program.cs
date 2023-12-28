@@ -103,7 +103,7 @@ namespace ExaminerandeUppgift
                         break;
                 }
 
-               // Visa resultat
+                // Visa resultat
                 Console.WriteLine($"Resultat blev: {tal1} {tecken} {tal2} = {resultat}");
 
                 // Fråga användaren om den vill visa tidigare resultat.
@@ -130,7 +130,7 @@ namespace ExaminerandeUppgift
                 }
 
                 Console.Clear();
-            
+            }
 
            }
         }
